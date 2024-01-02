@@ -1,3 +1,7 @@
+# Soccer updates application deployed in githubpage : https://prembe86.github.io/soccer/
+
+This projeect is deployed in github page with url : https://prembe86.github.io/soccer/
+
 # Soccer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
