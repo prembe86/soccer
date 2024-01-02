@@ -12,7 +12,7 @@
 
     <div class="row section" *ngIf="teamGameReusltsData.length && !(isLoading | async)">
       <div class="col-md-12">
-        <table class="table table-bordered">
+        <table class="table table-bordered  table-striped">
           <tbody>
             <tr *ngFor="let teamGameResult of teamGameReusltsData; index as rowId">
               <th scope="row">{{ rowId + 1 }}</th>
