@@ -1,0 +1,42 @@
+.section {
+  margin-top: 25px;
+}
+
+.header-title {
+  text-align: center;
+
+}
+
+.nav-item {
+  margin: 0 2rem;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.team-name {
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav.nav-list-items {
+  background: #beb7e9;
+  border-radius: 10px;
+}
+
+.main-table {
+  border-radius: 10px;
+}
+
+th {
+  background: #d5d2eb;
+}
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}

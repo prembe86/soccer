@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row section">
+    <div class="col-md-12">
+      <div class="heading">
+        <h3>SELECTED TEAM GAME RESULTS UPDATES</h3>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border text-primary m-5" role="status" *ngIf="(isLoading | async)"></div>
+    </div>
+
+    <div class="row section" *ngIf="teamGameReusltsData.length && !(isLoading | async)">
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <tbody>
+            <tr *ngFor="let teamGameResult of teamGameReusltsData; index as rowId">
+              <th scope="row">{{ rowId + 1 }}</th>
+              <th scope="row">
+                <img class="icon" src="{{ teamGameResult?.teams?.home?.logo }}" width="40px" />
+              </th>
+              <td class="team-name">
+                {{ teamGameResult.teams.home.name }}
+              </td>
+              <td>{{ teamGameResult.goals.home }}</td>
+              <td>{{ teamGameResult.goals.away }}</td>
+              <td>{{ teamGameResult.teams.away.name }}</td>
+              <th scope="row">
+                <img class="icon" src="{{ teamGameResult.teams.away.logo }}" width="40px" />
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 p-2 mt-4">
+        <button class="btn btn-primary" (click)="backToSoccerTopLeaguesUpdatesPage()">
+          Back To Top Leadgues Updates
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
